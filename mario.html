@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>MaRiO SiMuLaToR</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/archilogic-com/aframe-gblock/6498b71d/dist/gblock.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+       <a-assets>
+        <img id="pipe" src="pipe.jpeg">
+        <img id="touch" src="touchme.jpeg">
+        <img id='sky' src='https://vignette.wikia.nocookie.net/fantendo/images/9/99/NSMBU_Sky_Background_1.png/revision/latest?cb=20121215224646'>
+       <img id='peach' src='ppp.jpeg'>
+       <img id='rainbow' src='rr.png'>
+       <img id='win' src='vic.png'>
+       <img id="vicc" src="vicc.png">
+       </a-assets>
+       
+      
+       <a-plane data-cloud9-id="10" static-body="sphereRadius:NaN" id="boi" position="1 0 2" rotation="-90 0 0" width="100" height="100" color="aqua" scale="0.053000000000000005 0.017 1"></a-plane>
+        <a-sky src='#sky'></a-sky>
+        <!--<a-plane color="lightblue" static-body="sphereRadius:NaN" position="-3.63 0 -323.996" rotation="-90.012 0 0" scale="48.843 51.737 0.885">-->
+         
+        <!--</a-plane>-->
+         
+        
+        
+       <a-entity static-body gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" data-cloud9-id="31" position="0 7.664 -8.212">
+        </a-entity>
+        <a-entity data-cloud9-id="11" gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" position="0 5.855 -6.309" static-body>
+        </a-entity>
+        <a-entity static-body gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" data-cloud9-id="29" position="0 4.036 -3.927">
+        </a-entity>
+        <a-entity static-body gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" data-cloud9-id="30" position="0 1.733 -2.233">
+        </a-entity>
+        <a-entity static-body gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" data-cloud9-id="32">
+        </a-entity>
+        <a-entity data-cloud9-id="18" static-body="sphereRadius:NaN" gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" position="1.044 10.445 -12.03">
+        </a-entity>
+        <a-entity data-cloud9-id="17" static-body="sphereRadius:NaN" gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" position="-1.419 11.83 -11.947">
+        </a-entity>
+       <a-entity id='platform1'  gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="2.07 0.5 3" position="0 12.494 -5.218" rotation="0 89.954 0"></a-entity>
+        
+        <a-entity static-body gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="0.5 0.5 0.5" data-cloud9-id="31" position="0 7.664 -8.212">
+        </a-entity>
+         
+      <a-entity data-cloud9-id="19"  gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="2.07 0.5 3" position="0 12.494 -5.218" rotation="0 89.954 0"></a-entity>
+        
+      
+     <a-entity id='m1'  position="-6.044 13.544 -2.417" rotation="84.97 -0.057 0"  gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+     <a-entity  id="m2" position="-7.636 13.544 0.01" rotation="84.97 -0.057 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+     <a-entity  id="m3" position="-4.014 13.544 0.547" rotation="84.97 -0.057 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+     <a-entity  id="m4" position="-2.578 14.811 4.155" rotation="84.97 -0.057 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+     <a-entity data-cloud9-id="32" id="m5" position="-6.912 14.368 4.02" rotation="84.97 -0.057 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+     
+      
+         <a-entity class="player" id="player"
+                camera
+                jump-ability
+                universal-controls
+                kinematic-body
+                position="2 2 2">
+         
+            </a-entity>
+          
+       <a-entity id='knuckles1' gblock="https://poly.google.com/view/6qpUkLPLCIR" position="3.244 0 -0.613" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        
+        <a-entity id="knucklesgod" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="-3.459 40.914 -42.422" rotation="87.43335953696362 0 0" scale="36.958 17.929 5.932">
+        </a-entity>
+        <a-entity id='knuckles2' gblock="https://poly.google.com/view/6qpUkLPLCIR" position="-3.459 0 -0.613" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        
+            <a-box id='platformbox1' position="-3.873 13.205 -6.283" scale="-9.373 0.945 6.795"  static-body visible="hidden">
+            
+            </a-box>
+            
+            <a-box  id="platformbox2" position="-3.873 15.088 13.196" scale="-9.373 0.945 6.795" static-body="sphereRadius:NaN" material="">
+            
+            </a-box>
+           
+           <a-entity id='platform2' gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="2.07 0.5 3" position="0.049 14.382 14.155" rotation="0 89.954 0"></a-entity>
+            
+            
+            
+             
+              <a-box data-cloud9-id="214" static-body id="mario1box" position="-5.943 14.322 0.082" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" visible='false' >
+          
+      </a-box>
+      
+      <a-box  static-body="sphereRadius:NaN" id="mario2box" position="-7.196 14.298 2.525" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" visible='false'>
+          
+      </a-box>
+       <a-box data-cloud9-id="40"  id="mario3box" position="-3.818 14.498 3.179" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" visible='false'>
+          
+      </a-box>
+      <a-box  static-body="sphereRadius:NaN" id="mario4box" position="-2.305 15.582 6.787" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" visible='false'>
+          
+      </a-box>
+      <a-box   id="mario5box" position="-6.713 14.92 6.716" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" visible='false'>
+          
+      </a-box>
+      
+    <a-box  id="skinnyblock1" static-body="sphereRadius:NaN" color="red" position="-4.162 14.339 19.368" rotation="0 90.298 0" scale="0.04 1.059 2.151"></a-box>
+       
+       <a-box  id="skinnyblock2" static-body="sphereRadius:NaN" color="orange" position="-2.39 14.81 21.286" rotation="0 90.298 0" scale="0.04 1.059 2.151"></a-box>
+      
+       <a-box  id="skinnyblock3" static-body="sphereRadius:NaN" color="yellow" position="-5.188 16.843 21.856" rotation="0 90.298 0" scale="0.04 1.059 2.151"></a-box>
+       
+       <a-box  id="skinnyblock4" static-body="sphereRadius:NaN" color="green" position="-1.981 18.613 22.861" rotation="0 90.298 0" scale="0.04 1.059 2.151"></a-box>
+       
+       <a-box  id="skinnyblock5" static-body="sphereRadius:NaN" color="blue" position="-3.429 18.535 25.758" rotation="0 0.2291831180523293 0" scale="0.04 1.059 3.412"></a-box>
+       
+       <a-box  id="skinnyblock6" static-body="sphereRadius:NaN" color="indigo" position="-4.851 18.535 32.184" rotation="0 0.229 0" scale="0.04 1.059 3.412"></a-box>
+        
+       <a-box  id="skinnyblock7" static-body="sphereRadius:NaN" color="violet" position="-2.826 19.633 36.458" rotation="0 0.229 0" scale="0.04 1.059 3.412"></a-box>
+       
+        <a-box  id="skinnyblock5" static-body="sphereRadius:NaN" color="red" position="-4.005 20.472 39.471" rotation="0 0.2291831180523293 0" scale="0.04 1.059 3.412"></a-box>
+      
+       <a-box  id="platformbox3" position="-3.637 22.492 46.538" scale="-9.373 0.945 6.795" static-body="sphereRadius:NaN" material="">
+            
+            </a-box>
+           
+          <a-entity  id="platform3" gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="2.07 0.5 3" position="-0.349 21.669 47.036" rotation="0 89.954 0"></a-entity>
+      
+    <a-box static-body="sphereRadius:NaN" id="bridge1" src='#rainbow' position="-11.69 22.126 48.684" scale="5.303 1 1.846"></a-box>
+       
+       <a-box id="bridge2" src='#rainbow' position="-16.196 22.126 48.684" scale="2.562 1 1.846"></a-box>
+       
+       <a-box static-body="sphereRadius:NaN" id="bridge3" src='#rainbow' position="-20.785 22.126 48.684" scale="5.303 1 1.846"></a-box>
+      
+      <a-box id="bridge4" src='#rainbow' position="-25.206 22.126 48.684" scale="2.378 1 1.846"></a-box>
+       
+       <a-box static-body="sphereRadius:NaN" id="bridge5" src='#rainbow' position="-29.554 22.126 48.684" scale="5.303 1 1.846"></a-box>
+       
+       <a-box id="platformbox3" position="-37.437 22.492 46.538" scale="-9.373 0.945 6.795" static-body material="">
+            
+            </a-box>
+         <a-entity id="platform3" gblock="https://poly.google.com/view/4p2MpS5xL0C" scale="2.07 0.5 3" position="-33.837 21.669 47.036" rotation="0 89.954 0"></a-entity>
+         
+       <a-box data-cloud9-id="214" static-body id="mario5box" position="-5.943 14.322 0.082" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" visible='false'>
+          
+      </a-box>
+       <a-box data-cloud9-id="214" static-body id="mario6box" position="-5.943 14.322 0.082" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" visible='false'>
+          
+      </a-box>
+      
+       <a-box data-cloud9-id="214" static-body id="mario7box" position="-5.943 14.322 0.082" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" visible='false'>
+          
+      </a-box>
+       <a-box data-cloud9-id="214" static-body id="mario8box" position="-5.943 14.322 0.082" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" visible='false' >
+          
+      </a-box>
+       <a-entity data-cloud9-id="88" id="m8" position="-9.141 13.544 -6.705" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="65" id="m1" position="-11.743 13.544 -8.782" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity> 
+      <a-entity data-cloud9-id="87" id="m7" position="-11.592 13.544 -4.368" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity> 
+      
+      <a-entity data-cloud9-id="126" id="m5" position="-15.529 13.544 -5.199" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="85" id="m5" position="-16.108 13.544 -10.584" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="74" id="m5" position="12.026 1.182 -327.343" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="74" id="m5" position="13.63 1.253 -343.67" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="75" id="m5" position="13.655 1.205 -334.584" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-box data-cloud9-id="105" static-body="sphereRadius:NaN" id="copybox" position="-11.599 14.322 -6.512" visible="false" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" geometry="">
+          
+      </a-box>
+      <a-box data-cloud9-id="106" static-body="sphereRadius:NaN" id="copybox" position="-14.241 14.322 -4.111" visible="false" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="107" static-body="sphereRadius:NaN" id="copybox" position="-14.187 14.322 -8.498" visible="false" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="108" static-body="sphereRadius:NaN" id="copybox" position="-18.602 14.322 -10.29" visible="false" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="136" static-body="sphereRadius:NaN" id="copybox" position="-18.234 14.365 -4.866" visible="false" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      
+      <a-box data-cloud9-id="108" static-body="sphereRadius:NaN" id="copybox" position="-18.602 14.322 -10.264" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="" visible="false">
+          
+      </a-box>
+    <a-box data-cloud9-id="69" static-body="sphereRadius:NaN" position="2.694 6.452 13.347" scale="1 18.659 1" src="#pipe">
+     
+    </a-box>
+    <!--<a-entity data-cloud9-id="75" static-body="sphereRadius:NaN" gblock="https://poly.google.com/view/7urzD3j7BZF" position="-11.171 -4.165 -14.981" rotation="0 50 0" scale="34.789 13.485 29.791">-->
+     
+    <!--</a-entity>-->
+    <a-box id="touchME" static-body position="-22.648 14.378 -7.695" rotation="-38.78924273035673 90.01166961505233 1.8334649444186344" scale="5.504 8.578 1" src="touchme.jpeg">
+     
+    </a-box>
+    <a-box static-body src="#peach" position="12.195 50.205 -301.28" scale="803.818 100 -1.83" material="">
+     
+    </a-box>
+    <a-entity data-cloud9-id="128" id="m5" position="16.237 1.173 -325.733" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="128" id="m5" position="13.792 1.173 -320" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="128" id="m5" position="13.792 1.173 -320" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="129" id="m5" position="13.792 1.173 -320" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="132" id="m5" position="10.919 1.114 -337.225" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="130" id="m5" position="13.792 1.173 -320" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+      <a-entity data-cloud9-id="134" id="m5" position="17.028 1.14 -335.544" rotation="84.97 270 0" gblock="https://poly.google.com/view/2KTNoV3e3q1"> 
+      </a-entity>
+          <a-box data-cloud9-id="98" visible="false" static-body="sphereRadius:NaN" id="copybox" position="11 2 -320" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="117" visible="false" static-body="sphereRadius:NaN" id="copybox" position="11 2 -343.31" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+    
+    </a-box>
+    <a-box data-cloud9-id="116" visible="false" static-body="sphereRadius:NaN" id="copybox" position="8.21 2 -337.225" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="115" visible="false" static-body="sphereRadius:NaN" id="copybox" position="14.168 2 -335.544" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="94" visible="false" static-body="sphereRadius:NaN" id="copybox" position="11 2 -334.322" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-box data-cloud9-id="121" visible="false" static-body="sphereRadius:NaN" id="copybox" position="9.387 2 -327.085" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+    <a-box data-cloud9-id="112" visible="false" static-body="sphereRadius:NaN" id="copybox" position="13.29 2 -325.258" rotation="84.97 -0.057 0" scale="1.665 1.788 0.212" material="">
+          
+      </a-box>
+      <a-entity data-cloud9-id="245" id="knuckles7" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="-2.159 200 142.13" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        <a-entity data-cloud9-id="244" id="knuckles6" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="1.831 200 147.998" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        <a-entity data-cloud9-id="241" id="knuckles3" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="4.468 200 153.988" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        <a-entity data-cloud9-id="242" id="knuckles4" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="-5.557 200 147.762" rotation="0.9167324722093172 0 0">
+        </a-entity>
+        <a-entity data-cloud9-id="243" id="knuckles5" gblock="https://poly.google.com/view/6qpUkLPLCIR" position="-8.632 200 153.787" rotation="0.917 0 0">
+        </a-entity>
+      
+      
+      
+    
+    
+    
+    <!--<a-box data-cloud9-id="99" id="wall1" src="#win" position="-2.159 200 447.061" rotation="-1.604281826366305 90.1262611740785 85.71448615157115" scale="1.196 13.654 12.889">-->
+       <!-- </a-entity>-->
+       
+    <!--    </a-box>-->
+    <!--    <a-plane  id="wall1-3" src='#win' position="14.836 -600 6.502" rotation="0 -90.47003585115698 -89.03764136332994" scale="1.196 5.038 6.88">-->
+       <!-- </a-entity>-->
+       
+    <!--    </a-plane>-->
+    <!--    <a-box data-cloud9-id="197" id="wall1-4" src='#win' position="14.589 -600 6.355" rotation="-0.34377467707849396 90.06896539456541 -90.69921896920931" scale="1.196 5.038 6.88">-->
+       <!-- </a-entity>-->
+       
+        </a-box>
+        <a-box data-cloud9-id="197" id="wall1-5" src='#win' position="14.691 -600 3.254" rotation="0 89.66789493797383 0" scale="1.196 5.038 6.88">
+       <!-- </a-entity>-->
+       
+        </a-box>
+        <a-box data-cloud9-id="197" id="wall1-6" src='#win' position="18.651 -600 6.363" scale="1.196 5.038 6.88">
+       <!-- </a-entity>-->
+       
+        </a-box>
+        
+       <a-entity data-cloud9-id="296" gblock="https://poly.google.com/view/7pWlKthTIGp" id="sonic-2" position="-7.997 12.706 -9.322"></a-entity>
+       
+       <a-entity data-cloud9-id="296" gblock="https://poly.google.com/view/7pWlKthTIGp" id="sonic" position="0.117 12.706 -2.961"></a-entity>
+       
+       
+       <a-entity data-cloud9-id="367" static-body gblock="https://poly.google.com/view/4YajIweD1pN" id="bowser" position="0.689 25.613 48.637" rotation="0 -128.744 0" scale="2.805 4.451 5.379"></a-entity>
+       
+       <a-entity static-body data-cloud9-id="369" id="star" gblock="https://poly.google.com/view/7_bVjItDir2" position="-39.131 22.931 46.532" rotation="0 95.51206444830824 0" scale="0.298 0.212 0.466">
+        </a-entity>
+        <a-box data-cloud9-id="144" id="touchME2" static-body="sphereRadius:NaN" position="11.123 1.793 -346.049" rotation="-38.78924273035673 -0.17188733853924698 1.8334649444186344" scale="5.504 8.578 1" src="touchme.jpeg">
+     
+    </a-box>
+   <a-plane data-cloud9-id="274" id="gameover" static-body="sphereRadius:NaN" position="6.4 -2.93 22.038" rotation="-89.725 180.023 180.023" scale="1000 1000 1000" visible="false">
+     
+    </a-plane>
+    <a-plane data-cloud9-id="158" id="sky" static-body="sphereRadius:NaN" src="#vicc" position="6.4 115.191 22.038" rotation="-89.725 180.023 180.023" scale="216.03 335.89 1">
+     
+    </a-plane>
+       <a-plane data-cloud9-id="210" static-body="sphereRadius:NaN" id="winn" src="#win" position="-2.159 200 155.233" rotation="270 0 0" scale="18.517 29.871 94.994">&gt;
+        
+       </a-plane>
+       <a-entity data-cloud9-id="226" gblock="https://poly.google.com/view/d_AWzg-w7af" position="-10.822 201.078 138.348" scale="5.792 1 6.568" rotation="90 0 0">
+        
+       </a-entity>
+       <a-entity data-cloud9-id="227" gblock="https://poly.google.com/view/d_AWzg-w7af" position="3.811 201.078 138.348" scale="5.792 1 6.568" rotation="90 0 0">
+        
+       </a-entity>
+       <a-entity data-cloud9-id="259" gblock="https://poly.google.com/view/cQMXnePNv-0" position="-5.899 200 142.431" rotation="270 0 0" scale="0.09 0.09 0.12">
+        
+       </a-entity>
+              <a-entity data-cloud9-id="260" gblock="https://poly.google.com/view/0T7eqiMs2pk" position="0.906 200.382 143.735" rotation="270 0 0" scale="0.09 0.09 0.09">
+        
+       </a-entity>
+       <a-entity data-cloud9-id="271" gblock="https://poly.google.com/view/dlgrQ99HjK0" position="-2.159 209.425 144.681" rotation="0 180.02333923010465 0.4583662361046586" scale="9.468 15.353 6.264">
+        
+       </a-entity>
+       
+       <a-entity>
+  <a-entity data-cloud9-id="333" static-body gblock="https://poly.google.com/view/51cdZUWHig1" id="kirby" position="-0.271 16.196 15.325" rotation="0 85.88637349011042 0" scale="0.054 0.042 0.072"></a-entity>
+       
+  <a-animation attribute="rotation"
+               dur="10000"
+               fill='fowards'
+               to="0 360 0"
+               delay="2"
+               repeat="indefinite">
+               
+  </a-animation>
+  </a-entity>
+  
+  
+        </a-scene>
+        <script type="text/javascript" src="mario.js"></script>
+    </body>
+</html>
